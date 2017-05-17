@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.layer.ui.AddressBar;
 import com.layer.ui.HistoricMessagesFetchLayout;
 import com.layer.ui.MessageComposer;
@@ -29,6 +30,24 @@ import com.layer.ui.messagetypes.threepartimage.GallerySender;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageCellFactory;
 import com.layer.ui.typingindicators.BubbleTypingIndicatorFactory;
 import com.layer.ui.util.views.SwipeableItem;
+=======
+import com.layer.atlas.AddressBar;
+import com.layer.atlas.HistoricMessagesFetchLayout;
+import com.layer.atlas.MessageComposer;
+import com.layer.atlas.MessagesRecyclerView;
+import com.layer.atlas.AtlasTypingIndicator;
+import com.layer.atlas.messagetypes.generic.GenericCellFactory;
+import com.layer.atlas.messagetypes.location.LocationCellFactory;
+import com.layer.atlas.messagetypes.location.LocationSender;
+import com.layer.atlas.messagetypes.singlepartimage.SinglePartImageCellFactory;
+import com.layer.atlas.messagetypes.text.TextCellFactory;
+import com.layer.atlas.messagetypes.text.TextSender;
+import com.layer.atlas.messagetypes.threepartimage.CameraSender;
+import com.layer.atlas.messagetypes.threepartimage.GallerySender;
+import com.layer.atlas.messagetypes.threepartimage.ThreePartImageCellFactory;
+import com.layer.atlas.typingindicators.BubbleTypingIndicatorFactory;
+import com.layer.atlas.util.views.SwipeableItem;
+>>>>>>> Rename AtlasRecyclerview
 import com.layer.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.changes.LayerChange;
@@ -51,7 +70,11 @@ public class MessagesListActivity extends BaseActivity {
     private AddressBar mAddressBar;
     private HistoricMessagesFetchLayout mHistoricFetchLayout;
     private MessagesRecyclerView mMessagesList;
+<<<<<<< HEAD
     private TypingIndicatorLayout mTypingIndicator;
+=======
+    private AtlasTypingIndicator mTypingIndicator;
+>>>>>>> Rename AtlasRecyclerview
     private MessageComposer mMessageComposer;
     private IdentityChangeListener mIdentityChangeListener;
 
