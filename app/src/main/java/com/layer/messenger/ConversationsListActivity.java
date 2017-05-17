@@ -121,5 +121,4 @@ public class ConversationsListActivity extends BaseActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

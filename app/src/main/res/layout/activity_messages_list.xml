@@ -3,25 +3,43 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
+<<<<<<< HEAD
     <com.layer.ui.AddressBar
+=======
+    <com.layer.atlas.AddressBar
+>>>>>>> Rename AtlasRecyclerview
         android:id="@+id/conversation_launcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+<<<<<<< HEAD
     <com.layer.ui.HistoricMessagesFetchLayout
+=======
+    <com.layer.atlas.HistoricMessagesFetchLayout
+>>>>>>> Rename AtlasRecyclerview
         android:id="@+id/historic_sync_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
+<<<<<<< HEAD
         <com.layer.ui.MessagesRecyclerView
+=======
+        <com.layer.atlas.MessagesRecyclerView
+>>>>>>> Rename AtlasRecyclerview
             android:id="@+id/messages_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
+<<<<<<< HEAD
     </com.layer.ui.HistoricMessagesFetchLayout>
 
     <com.layer.ui.MessageComposer
+=======
+    </com.layer.atlas.HistoricMessagesFetchLayout>
+
+    <com.layer.atlas.MessageComposer
+>>>>>>> Rename AtlasRecyclerview
         android:id="@+id/message_composer"
         android:layout_width="match_parent"
         android:minHeight="48dp"
