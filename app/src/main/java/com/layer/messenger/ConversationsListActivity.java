@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+<<<<<<< HEAD
 import com.layer.ui.ConversationsRecyclerView;
 import com.layer.ui.adapters.ConversationsAdapter;
 import com.layer.ui.messagetypes.location.LocationCellFactory;
@@ -15,6 +16,15 @@ import com.layer.ui.messagetypes.text.TextCellFactory;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageCellFactory;
 import com.layer.ui.util.views.SwipeableItem;
 
+=======
+import com.layer.atlas.ConversationsRecyclerView;
+import com.layer.atlas.adapters.ConversationsAdapter;
+import com.layer.atlas.messagetypes.location.LocationCellFactory;
+import com.layer.atlas.messagetypes.singlepartimage.SinglePartImageCellFactory;
+import com.layer.atlas.messagetypes.text.TextCellFactory;
+import com.layer.atlas.messagetypes.threepartimage.ThreePartImageCellFactory;
+import com.layer.atlas.util.views.SwipeableItem;
+>>>>>>> Rename AtlasRecyclerview
 import com.layer.messenger.util.Log;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;
