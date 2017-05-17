@@ -14,6 +14,7 @@ import com.layer.ui.messagetypes.singlepartimage.SinglePartImageCellFactory;
 import com.layer.ui.messagetypes.text.TextCellFactory;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageCellFactory;
 import com.layer.ui.util.views.SwipeableItem;
+
 import com.layer.messenger.util.Log;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;
