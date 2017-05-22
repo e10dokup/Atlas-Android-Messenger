@@ -411,6 +411,5 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
     }
 }
