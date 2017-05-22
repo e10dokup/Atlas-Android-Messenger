@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rename package from atlas to ui
 import com.layer.ui.ConversationsRecyclerView;
 import com.layer.ui.adapters.ConversationsAdapter;
 import com.layer.ui.messagetypes.location.LocationCellFactory;
@@ -15,6 +18,7 @@ import com.layer.ui.messagetypes.singlepartimage.SinglePartImageCellFactory;
 import com.layer.ui.messagetypes.text.TextCellFactory;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageCellFactory;
 import com.layer.ui.util.views.SwipeableItem;
+<<<<<<< HEAD
 
 =======
 import com.layer.atlas.ConversationsRecyclerView;
@@ -25,6 +29,8 @@ import com.layer.atlas.messagetypes.text.TextCellFactory;
 import com.layer.atlas.messagetypes.threepartimage.ThreePartImageCellFactory;
 import com.layer.atlas.util.views.SwipeableItem;
 >>>>>>> Rename AtlasRecyclerview
+=======
+>>>>>>> Rename package from atlas to ui
 import com.layer.messenger.util.Log;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;

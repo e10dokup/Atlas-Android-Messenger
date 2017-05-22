@@ -18,13 +18,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-<<<<<<< HEAD
 import com.layer.ui.Avatar;
 import com.layer.ui.util.Util;
-=======
-import com.layer.atlas.Avatar;
-import com.layer.atlas.util.Util;
->>>>>>> Rename AtlasRecyclerview
 import com.layer.messenger.util.ConversationSettingsTaskLoader;
 import com.layer.messenger.util.ConversationSettingsTaskLoader.Results;
 
