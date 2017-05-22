@@ -28,11 +28,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp">
 
-<<<<<<< HEAD
             <com.layer.ui.Avatar
-=======
-            <com.layer.atlas.Avatar
->>>>>>> Rename AtlasRecyclerview
                 android:id="@+id/avatar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"

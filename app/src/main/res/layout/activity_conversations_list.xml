@@ -2,11 +2,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-<<<<<<< HEAD
     <com.layer.ui.ConversationsRecyclerView
-=======
-    <com.layer.atlas.ConversationsRecyclerView
->>>>>>> Rename AtlasRecyclerview
         android:id="@+id/conversations_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
