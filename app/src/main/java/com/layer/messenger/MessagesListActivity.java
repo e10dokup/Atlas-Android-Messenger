@@ -159,7 +159,7 @@ public class MessagesListActivity extends BaseActivity {
                 .setHistoricMessagesPerFetch(20);
 
         mMessagesList = ((MessagesRecyclerView) findViewById(R.id.messages_list))
-                .init(getLayerClient(), getPicasso())
+                .init(getLayerClient())
                 .addCellFactories(
                         new TextCellFactory(),
                         new ThreePartImageCellFactory(this, getLayerClient(), getPicasso()),
