@@ -21,7 +21,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.ui.Avatar;
+import com.layer.ui.avatar.Avatar;
 import com.layer.ui.util.IdentityDisplayNameComparator;
 import com.layer.messenger.util.Util;
 import com.layer.sdk.LayerClient;
@@ -192,7 +192,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
         @Override
         public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
             ViewHolder viewHolder = new ViewHolder(parent);
-            viewHolder.mAvatar.init(App.getPicasso());
+            viewHolder.mAvatar.init(getApplicationContext(), getLayerClient());
             viewHolder.itemView.setTag(viewHolder);
 
             // Click to display remove / block dialog

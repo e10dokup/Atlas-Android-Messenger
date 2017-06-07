@@ -19,7 +19,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.ui.Avatar;
+import com.layer.ui.avatar.Avatar;
 import com.layer.ui.util.Util;
 import com.layer.messenger.util.ConversationSettingsTaskLoader;
 import com.layer.messenger.util.ConversationSettingsTaskLoader.Results;
@@ -101,7 +101,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mAutoDownloadMimeTypes = (TextView) findViewById(R.id.auto_download_mime_types);
 
 
-        mAvatar.init(getPicasso());
+        mAvatar.init(getApplicationContext(), getLayerClient());
 
         getSupportLoaderManager().initLoader(R.id.setting_loader_id, null, this);
 
