@@ -100,7 +100,6 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mDiskAllowance = (TextView) findViewById(R.id.disk_allowance);
         mAutoDownloadMimeTypes = (TextView) findViewById(R.id.auto_download_mime_types);
 
-
         mAvatarView.init();
 
         getSupportLoaderManager().initLoader(R.id.setting_loader_id, null, this);
