@@ -356,7 +356,6 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
 
     @Override
     public void onAuthenticationChallenge(LayerClient layerClient, String s) {
-
     }
 
     @Override
