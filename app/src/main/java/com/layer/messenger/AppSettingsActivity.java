@@ -101,7 +101,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mAutoDownloadMimeTypes = (TextView) findViewById(R.id.auto_download_mime_types);
 
 
-        mAvatar.init(getApplicationContext(), getLayerClient());
+        mAvatar.init();
 
         getSupportLoaderManager().initLoader(R.id.setting_loader_id, null, this);
 

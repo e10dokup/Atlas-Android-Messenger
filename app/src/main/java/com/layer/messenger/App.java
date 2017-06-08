@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.StrictMode;
 
+import com.layer.ui.avatar.Injection;
 import com.layer.ui.messagetypes.text.TextCellFactory;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageUtils;
 import com.layer.ui.util.Util;
@@ -142,7 +143,7 @@ public class App extends Application {
     /**
      * Gets or creates a LayerClient, using a default set of LayerClient.Options
      * App ID and Options from the `generateLayerClient` method.  Returns `null` if the App was
-     * unable to create a LayerClient (due to no App ID, etc.). Set App Id {@link App.LAYER_APP_ID}
+     * unable to create a LayerClient (due to no App ID, etc.). Set the information in assets/LayerConfiguration.json
      * @return New or existing LayerClient, or `null` if a LayerClient could not be constructed.
      */
     public static LayerClient getLayerClient() {
@@ -178,6 +179,7 @@ public class App extends Application {
             /* Register AuthenticationProvider for handling authentication challenges */
             sLayerClient.registerAuthenticationListener(getAuthenticationProvider());
         }
+        Injection.setLayerClient(sLayerClient);
         return sLayerClient;
     }
 

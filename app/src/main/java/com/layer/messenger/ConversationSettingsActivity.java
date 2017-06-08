@@ -192,7 +192,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
         @Override
         public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
             ViewHolder viewHolder = new ViewHolder(parent);
-            viewHolder.mAvatar.init(getApplicationContext(), getLayerClient());
+            viewHolder.mAvatar.init();
             viewHolder.itemView.setTag(viewHolder);
 
             // Click to display remove / block dialog
