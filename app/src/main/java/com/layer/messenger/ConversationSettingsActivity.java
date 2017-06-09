@@ -280,4 +280,5 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
             mBlocked = (ImageView) itemView.findViewById(R.id.blocked);
         }
     }
+
 }
