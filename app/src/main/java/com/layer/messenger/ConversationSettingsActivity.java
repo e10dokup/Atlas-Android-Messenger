@@ -21,7 +21,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.ui.avatar.Avatar;
+import com.layer.ui.avatar.AvatarView;
 import com.layer.ui.util.IdentityDisplayNameComparator;
 import com.layer.messenger.util.Util;
 import com.layer.sdk.LayerClient;
@@ -192,7 +192,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
         @Override
         public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
             ViewHolder viewHolder = new ViewHolder(parent);
-            viewHolder.mAvatar.init();
+            viewHolder.mAvatarView.init();
             viewHolder.itemView.setTag(viewHolder);
 
             // Click to display remove / block dialog
@@ -245,7 +245,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
         public void onBindViewHolder(ViewHolder viewHolder, int position) {
             Identity participant = mParticipants.get(position);
             viewHolder.mTitle.setText(com.layer.ui.util.Util.getDisplayName(participant));
-            viewHolder.mAvatar.setParticipants(participant);
+            viewHolder.mAvatarView.setParticipants(participant);
             viewHolder.mParticipant = participant;
 
             Policy block = null;
@@ -267,7 +267,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
     }
 
     private static class ViewHolder extends RecyclerView.ViewHolder {
-        Avatar mAvatar;
+        AvatarView mAvatarView;
         TextView mTitle;
         ImageView mBlocked;
         Identity mParticipant;
@@ -275,7 +275,7 @@ public class ConversationSettingsActivity extends BaseActivity implements LayerP
 
         public ViewHolder(ViewGroup parent) {
             super(LayoutInflater.from(parent.getContext()).inflate(R.layout.participant_item, parent, false));
-            mAvatar = (Avatar) itemView.findViewById(R.id.avatar);
+            mAvatarView = (AvatarView) itemView.findViewById(R.id.avatar);
             mTitle = (TextView) itemView.findViewById(R.id.title);
             mBlocked = (ImageView) itemView.findViewById(R.id.blocked);
         }
