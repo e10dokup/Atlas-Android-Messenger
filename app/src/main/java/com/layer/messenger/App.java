@@ -5,7 +5,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.StrictMode;
 
-import com.layer.ui.avatar.Injection;
+import com.layer.ui.Injection;
 import com.layer.ui.messagetypes.text.TextCellFactory;
 import com.layer.ui.messagetypes.threepartimage.ThreePartImageUtils;
 import com.layer.ui.util.Util;
